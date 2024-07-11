@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Prediction</title>
+</head>
+<body>
+    <h2>Crop Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="n">N:</label><br>
+        <input type="text" id="n" name="n"><br>
+        <label for="p">P:</label><br>
+        <input type="text" id="p" name="p"><br>
+        <label for="k">K:</label><br>
+        <input type="text" id="k" name="k"><br>
+        <label for="temperature">Temperature:</label><br>
+        <input type="text" id="temperature" name="temperature"><br>
+        <label for="ph">pH:</label><br>
+        <input type="text" id="ph" name="ph"><br>
+        <label for="humidity">Humidity:</label><br>
+        <input type="text" id="humidity" name="humidity"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
